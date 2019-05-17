@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { switchMap } from 'rxjs/operators';
+import { Router, ActivatedRoute } from '@angular/router';
 
 import { Piece } from '../types/piece';
 import { PieceService } from '../services/piece.service';
@@ -11,7 +10,7 @@ import { PieceService } from '../services/piece.service';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements OnInit {
-  piece: any;
+  piece: Piece;
   private sub: any;
 
   constructor(

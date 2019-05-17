@@ -1,0 +1,25 @@
+.detail-card {
+    max-width: 40%;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+ 
+#detail-img {
+    height: 200px;
+    width: 200px;
+    padding-bottom: 50px;
+}
+
+.mat-card-header .mat-card-title {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+}
+
+::ng-deep .mat-card-header-text {  
+    margin: 0px 16px 0px 0px !important;
+}
+
+.mat-card-subtitle {
+    padding-left: 5px;
+}

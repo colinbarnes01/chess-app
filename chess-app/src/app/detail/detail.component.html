@@ -1,5 +1,19 @@
-<p>
-  detail works!
-</p>
-<h2>{{piece.name}} {{piece.value}}</h2>
-<img src={{piece.imgLarge}}>
+<mat-card class="detail-card">
+    
+  <mat-card-header>
+      <mat-card-title>The {{piece.name}}</mat-card-title>
+      <mat-card-subtitle>value: {{piece.value}}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <img id="detail-img" src={{piece.imgLarge}} alt="chess piece icon">
+    
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+
+  </mat-card>
+  
