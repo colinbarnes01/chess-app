@@ -3,4 +3,5 @@ export interface Piece {
     value: number;
     imgSmall: string;
     imgLarge: string;
+    description: string;
 }

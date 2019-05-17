@@ -25,4 +25,8 @@ export class DetailComponent implements OnInit {
     });
   }
 
+  goBack() {
+    this.router.navigate(['/pieces']);
+  }
+
 }
