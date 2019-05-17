@@ -1,4 +1,8 @@
 <p>
   pieces works!
 </p>
-<mat-card>{{queen.name}} {{queen.value}} {{queen.image}}</mat-card>
+
+<div class="pieces">
+  <mat-card *ngFor= "let piece of pieces" (click)="onClick(piece.name)">{{piece.name}} {{piece.value}} {{piece.image}}</mat-card>
+</div>
+

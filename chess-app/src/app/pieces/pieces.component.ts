@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { Piece } from '../types/piece';
+import { PieceService } from '../services/piece.service';
 
 @Component({
   selector: 'app-pieces',
@@ -8,12 +11,16 @@ import { Piece } from '../types/piece';
 })
 
 export class PiecesComponent implements OnInit {
-  public queen: Piece;
+  public pieces: Piece[];
 
-  constructor() { }
+  constructor(private router: Router, private pieceService: PieceService) { }
 
   ngOnInit() {
-    this.queen = new Piece('Queen', 9, 'url');
+    this.pieces = this.pieceService.getPieces();
+  }
+
+  onClick(name: string) {
+    this.router.navigate(['/detail', name]);
   }
 
 }
