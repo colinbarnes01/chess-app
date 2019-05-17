@@ -1,11 +1,6 @@
-export class Piece {
+export interface Piece {
     name: string;
     value: number;
-    image: string;
-
-    constructor(name: string, value: number, image: string) {
-        this.name = name;
-        this.value = value;
-        this.image = image;
-    }
+    imgSmall: string;
+    imgLarge: string;
 }

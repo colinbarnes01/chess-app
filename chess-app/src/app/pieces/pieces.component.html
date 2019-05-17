@@ -3,6 +3,16 @@
 </p>
 
 <div class="pieces">
-  <mat-card *ngFor= "let piece of pieces" (click)="onClick(piece.name)">{{piece.name}} {{piece.value}} {{piece.image}}</mat-card>
+
+  <div *ngFor= "let piece of pieces">
+      
+
+      <mat-card  (click)="onClick(piece.name)">
+          <span class="badge"><img src={{piece.imgSmall}}></span>
+        
+          {{piece.name}} {{piece.value}} 
+      </mat-card>
+  </div>
+  
 </div>
 
