@@ -1,3 +1,7 @@
+.pieces {
+  max-width: 50%;
+}
+
 .pieces mat-card {
     cursor: pointer;
     position: relative;
@@ -7,6 +11,10 @@
     padding: .3em 0;
     height: 105px;
     border-radius: 4px;
+  }
+  .mat-card-title{
+    float: right;
+    padding-right: 2.5%;
   }
   .pieces mat-card.selected:hover {
     background-color: #BBD8DC !important;
@@ -30,4 +38,5 @@
     height: 1.8em;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
+    display: inline-block;
   }
