@@ -1,6 +1,13 @@
 {
   "name": "chess-app",
   "version": "0.0.0",
+  "author": "Colin Barnes",
+  "license" : "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colinbarnes01/chess-app"
+  },
+
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
