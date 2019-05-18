@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PiecesComponent } from './pieces/pieces.component';
 import { DetailComponent } from './detail/detail.component';
+import { PuzzleComponent } from './puzzle/puzzle.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'pieces',
     component: PiecesComponent
+  },
+  {
+    path: 'puzzle',
+    component: PuzzleComponent
   },
   {
     path: '**',

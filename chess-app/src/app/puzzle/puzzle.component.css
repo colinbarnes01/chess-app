@@ -1,0 +1,32 @@
+.puzzle-card {
+    max-width: 25%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.mat-card-header {
+    margin-bottom: 5%;
+}
+
+.mat-card-header .mat-card-title {
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+}
+
+::ng-deep .mat-card-header-text {  
+    margin: 0px 16px 0px 0px !important;
+}
+
+.mat-card-image {
+    max-width: 100%;
+    margin: 0 25% 5% 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .puzzle-card {
+        max-width: 80%;
+        margin-left: 5%;
+    }
+}
+  

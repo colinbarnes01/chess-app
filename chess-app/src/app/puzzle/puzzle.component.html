@@ -1,0 +1,14 @@
+<mat-card class="puzzle-card" *ngIf="isPuzzleDefined()">
+  <mat-card-header>
+    <mat-card-title>Daily Puzzle</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src={{puzzle.image}} alt="image of daily puzzle">
+  <mat-card-content>
+    <p>
+      Try today's daily puzzle at chess.com!
+    </p>
+    <p>
+      <a href="{{puzzle.url}}">{{puzzle.url}}</a>
+    </p>
+  </mat-card-content>
+</mat-card>
