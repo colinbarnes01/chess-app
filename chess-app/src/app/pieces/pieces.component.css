@@ -1,9 +1,11 @@
 #pieces-header {
   margin-left: 15px;
+  margin-left: 3%;
 }
 
 .pieces {
   max-width: 50%;
+  margin-left: 3%;
 }
 
 .pieces mat-card {
@@ -11,7 +13,7 @@
     position: relative;
     left: 0;
     background-color: #EEE;
-    margin: 0px 15px 15px 15px;
+    margin: 0px 15px 15px 0;
     padding: .3em 0;
     height: 105px;
     border-radius: 4px;
@@ -44,3 +46,17 @@
     border-radius: 4px 0 0 4px;
     display: inline-block;
   }
+
+  @media only screen and (max-width: 600px) {
+    .pieces {
+        max-width: 80%;
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+  .pieces {
+      max-width: 100%;
+      margin-left: 2%;
+  }
+}
