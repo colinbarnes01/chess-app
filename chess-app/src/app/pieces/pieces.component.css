@@ -60,3 +60,10 @@
       margin-left: 2%;
   }
 }
+
+#img_cite {
+  float: right;
+  font-size: 12px;
+  font-weight: none;
+  margin-right: 1%;
+}
