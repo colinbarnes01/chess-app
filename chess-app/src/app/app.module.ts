@@ -10,13 +10,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailComponent } from './detail/detail.component';
 import { PuzzleComponent } from './puzzle/puzzle.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
     PiecesComponent,
     DetailComponent,
-    PuzzleComponent
+    PuzzleComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,12 @@ import { PuzzleComponent } from './puzzle/puzzle.component';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

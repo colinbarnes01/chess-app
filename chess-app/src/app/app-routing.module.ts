@@ -18,10 +18,10 @@ const routes: Routes = [
     path: 'puzzle',
     component: PuzzleComponent
   },
-  {
-    path: '**',
-    component: PiecesComponent
-  }
+  { path: '**',
+    redirectTo: '/pieces',
+    pathMatch: 'full'
+  },
 ]
 
 @NgModule({
