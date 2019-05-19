@@ -19,7 +19,7 @@ describe('when detail page loads', () => {
     expect(pieces.count()).toEqual(6);
   });
 
-  it('should display the king piece first and the others in order', () => {
+  it('should display the pieces in order', () => {
     const expected = [ 'The King', 'The Queen', 'The Rook', 'The Bishop', 'The Knight', 'The Pawn'];
     const pieces = page.getPiecesList();
     expect(pieces.getText()).toEqual(expected);
@@ -28,7 +28,6 @@ describe('when detail page loads', () => {
   it('should display a citation for the images', () => {
     expect(page.getImageCitation()).toBeTruthy();
   });
-
 
 
   afterEach(async () => {
