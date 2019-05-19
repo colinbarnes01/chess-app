@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 #### NOTE about safari: 
 
-There is a known issue with the materials side nav not working with Safari: https://github.com/angular/components/issues/11715.  Use Firefox or Chrome for best performance.
+There is a known issue with the Materials side nav not working with Safari: https://github.com/angular/components/issues/11715.  Use Firefox or Chrome for best performance.
