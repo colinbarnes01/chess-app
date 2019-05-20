@@ -26,6 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-#### NOTE about safari: 
+#### NOTE about Safari: 
 
 There is a known issue with the Materials side nav not working with Safari: https://github.com/angular/components/issues/11715.  Use Firefox or Chrome for best performance.
